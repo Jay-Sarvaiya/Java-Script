@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainContent{
+    display: flex;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.65)),url("./background-image.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing{
+    margin-left: 10px;
+}
+
+.typing::after{
+
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
